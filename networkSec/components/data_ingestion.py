@@ -39,7 +39,7 @@ class DataIngestionComponent:
 
             df=pd.DataFrame(list(collection.find()))
             if "_id" in df.columns.to_list():
-                df.drop(columns=["_id"],axis=1)
+                df.drop(columns=["_id"],axis=1,inplace=True)
             
             df.replace({"na":np.nan},inplace=True)
 
@@ -82,6 +82,7 @@ class DataIngestionComponent:
     def initiate_data_ingestion(self):
         try:
             dataframe=self.export_dataframe()
+            print(dataframe.dtypes)
             dataframe=self.export_feature_store(dataframe)
             self.train_test(dataframe)
 

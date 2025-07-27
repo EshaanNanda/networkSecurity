@@ -1,0 +1,15 @@
+[2025-07-27 11:06:04,732] 16 root - INFO -Initate the data ingestion
+[2025-07-27 11:06:11,168] 67 root - INFO -Performed train test split
+[2025-07-27 11:06:11,168] 68 root - INFO -Exited the train_test method
+[2025-07-27 11:06:11,171] 73 root - INFO -Exporting train anf test file path
+[2025-07-27 11:06:11,262] 77 root - INFO -Made dir for train & test set
+[2025-07-27 11:06:11,267] 18 root - INFO -data initiating completed
+[2025-07-27 11:06:11,299] 24 root - INFO -INITIATING DATA VALIDATION
+[2025-07-27 11:06:11,385] 39 root - INFO -required number of culmns: 2
+[2025-07-27 11:06:11,385] 40 root - INFO -Data Frame has columns :32
+[2025-07-27 11:06:11,385] 39 root - INFO -required number of culmns: 2
+[2025-07-27 11:06:11,387] 40 root - INFO -Data Frame has columns :32
+[2025-07-27 11:06:11,599] 26 root - INFO -DATA VALIDATION COMPLETED
+[2025-07-27 11:06:11,599] 32 root - INFO -INITIATING DATA TRANSFORMATION
+[2025-07-27 11:06:11,599] 45 root - INFO -startung data transofmration
+[2025-07-27 11:06:11,638] 33 root - INFO -Enteretd get data trasnformation obj
