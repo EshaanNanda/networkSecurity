@@ -47,8 +47,7 @@ class DataTransformationComponent:
             train_df=DataTransformationComponent.read_data(self.data_validation_artifact.valid_train_file_path)
             test_df=DataTransformationComponent.read_data(self.data_validation_artifact.valid_test_file_path)
 
-            print(train_df.dtypes)
-            print(test_df.dtypes)
+
 
             input_feature_train_df=train_df.drop(columns=[TARGET_COLUMN],axis=1)
             target_feature_train_df=train_df[TARGET_COLUMN]
@@ -58,30 +57,27 @@ class DataTransformationComponent:
             target_feature_test_df=test_df[TARGET_COLUMN]
             target_feature_test_df=target_feature_test_df.replace(-1,0)
 
-            print("Train input columns:", input_feature_train_df.columns.tolist())
-            print("Train input types:\n", input_feature_train_df.dtypes)
-
-            print("Test input columns:", input_feature_test_df.columns.tolist())
-            print("Test input types:\n", input_feature_test_df.dtypes)
-
 
             preprocessor=self.get_data_transformation_obj()
+
             preprocessor_obj=preprocessor.fit(input_feature_train_df)
+
             transformed_input_train_feature=preprocessor_obj.transform(input_feature_train_df)
             transformed_input_test_feature=preprocessor_obj.transform(input_feature_test_df)   
             
             train_arr=np.c_[transformed_input_train_feature,np.array(target_feature_train_df)]
             test_arr=np.c_[transformed_input_test_feature,np.array(target_feature_test_df)]
 
-            save_numpy_array_data(self.data_transformation_config.transformed_object_file_path,array=train_arr)
+            save_numpy_array_data(self.data_transformation_config.transformed_train_file_path,array=train_arr)
             save_numpy_array_data(self.data_transformation_config.transformed_test_file_path,array=test_arr)
             save_object(self.data_transformation_config.transformed_object_file_path,preprocessor_obj)
+            save_object( "final_model/preprocessor.pkl", preprocessor_obj,)
 
             data_transformation_artifact=DataTransformationArtifact(
-                transformed_object_file_path=self.data_transformation_config,
+                transformed_object_file_path=self.data_transformation_config.transformed_object_file_path,
                 transformed_train_file_path=self.data_transformation_config.transformed_train_file_path,
                 transformed_test_file_path=self.data_transformation_config.transformed_test_file_path
-            )
+            )   
 
             return data_transformation_artifact
 

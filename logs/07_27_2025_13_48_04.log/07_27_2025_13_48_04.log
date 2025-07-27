@@ -1,0 +1,25 @@
+[2025-07-27 13:48:07,745] 17 root - INFO -Initate the data ingestion
+[2025-07-27 13:48:17,331] 67 root - INFO -Performed train test split
+[2025-07-27 13:48:17,331] 68 root - INFO -Exited the train_test method
+[2025-07-27 13:48:17,331] 73 root - INFO -Exporting train anf test file path
+[2025-07-27 13:48:17,423] 77 root - INFO -Made dir for train & test set
+[2025-07-27 13:48:17,423] 19 root - INFO -data initiating completed
+[2025-07-27 13:48:17,432] 25 root - INFO -INITIATING DATA VALIDATION
+[2025-07-27 13:48:17,536] 39 root - INFO -required number of culmns: 2
+[2025-07-27 13:48:17,536] 40 root - INFO -Data Frame has columns :31
+[2025-07-27 13:48:17,536] 39 root - INFO -required number of culmns: 2
+[2025-07-27 13:48:17,538] 40 root - INFO -Data Frame has columns :31
+[2025-07-27 13:48:17,728] 27 root - INFO -DATA VALIDATION COMPLETED
+[2025-07-27 13:48:17,728] 33 root - INFO -INITIATING DATA TRANSFORMATION
+[2025-07-27 13:48:17,728] 45 root - INFO -startung data transofmration
+[2025-07-27 13:48:17,769] 33 root - INFO -Enteretd get data trasnformation obj
+[2025-07-27 13:48:17,788] 47 root - INFO -Entered the save_object method of MainUtils class
+[2025-07-27 13:48:17,794] 51 root - INFO -Exited the save_object method of MainUtils class
+[2025-07-27 13:48:17,794] 47 root - INFO -Entered the save_object method of MainUtils class
+[2025-07-27 13:48:17,794] 51 root - INFO -Exited the save_object method of MainUtils class
+[2025-07-27 13:48:17,794] 35 root - INFO -DATA TRANSFORMATION COMPLETED
+[2025-07-27 13:48:17,794] 38 root - INFO -Model Training started
+[2025-07-27 14:06:09,187] 47 root - INFO -Entered the save_object method of MainUtils class
+[2025-07-27 14:06:09,239] 51 root - INFO -Exited the save_object method of MainUtils class
+[2025-07-27 14:06:09,239] 47 root - INFO -Entered the save_object method of MainUtils class
+[2025-07-27 14:06:09,315] 51 root - INFO -Exited the save_object method of MainUtils class

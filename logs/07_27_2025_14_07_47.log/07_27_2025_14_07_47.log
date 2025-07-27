@@ -1,0 +1,27 @@
+[2025-07-27 14:07:50,174] 17 root - INFO -Initate the data ingestion
+[2025-07-27 14:07:58,438] 67 root - INFO -Performed train test split
+[2025-07-27 14:07:58,439] 68 root - INFO -Exited the train_test method
+[2025-07-27 14:07:58,439] 73 root - INFO -Exporting train anf test file path
+[2025-07-27 14:07:58,704] 77 root - INFO -Made dir for train & test set
+[2025-07-27 14:07:58,706] 19 root - INFO -data initiating completed
+[2025-07-27 14:07:58,729] 25 root - INFO -INITIATING DATA VALIDATION
+[2025-07-27 14:07:58,957] 39 root - INFO -required number of culmns: 2
+[2025-07-27 14:07:58,957] 40 root - INFO -Data Frame has columns :31
+[2025-07-27 14:07:58,957] 39 root - INFO -required number of culmns: 2
+[2025-07-27 14:07:58,959] 40 root - INFO -Data Frame has columns :31
+[2025-07-27 14:07:59,669] 27 root - INFO -DATA VALIDATION COMPLETED
+[2025-07-27 14:07:59,670] 33 root - INFO -INITIATING DATA TRANSFORMATION
+[2025-07-27 14:07:59,671] 45 root - INFO -startung data transofmration
+[2025-07-27 14:07:59,777] 33 root - INFO -Enteretd get data trasnformation obj
+[2025-07-27 14:07:59,804] 47 root - INFO -Entered the save_object method of MainUtils class
+[2025-07-27 14:07:59,816] 51 root - INFO -Exited the save_object method of MainUtils class
+[2025-07-27 14:07:59,817] 47 root - INFO -Entered the save_object method of MainUtils class
+[2025-07-27 14:07:59,828] 51 root - INFO -Exited the save_object method of MainUtils class
+[2025-07-27 14:07:59,832] 35 root - INFO -DATA TRANSFORMATION COMPLETED
+[2025-07-27 14:07:59,832] 38 root - INFO -Model Training started
+[2025-07-27 14:29:44,025] 47 root - INFO -Entered the save_object method of MainUtils class
+[2025-07-27 14:29:44,031] 51 root - INFO -Exited the save_object method of MainUtils class
+[2025-07-27 14:29:44,032] 47 root - INFO -Entered the save_object method of MainUtils class
+[2025-07-27 14:29:44,039] 51 root - INFO -Exited the save_object method of MainUtils class
+[2025-07-27 14:29:44,040] 110 root - INFO -Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\07_27_2025_14_07_48\\model_trainer\\trained_model\\saved_models', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9909040093500685, precision_score=0.9889441119789025, recall_score=0.9928716904276986), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9894021195760848, precision_score=0.9868368568009573, recall_score=0.991980753809142))
+[2025-07-27 14:29:44,041] 43 root - INFO -Model Training artifact created
