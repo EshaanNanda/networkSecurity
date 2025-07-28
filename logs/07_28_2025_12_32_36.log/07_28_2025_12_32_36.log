@@ -1,0 +1,28 @@
+[2025-07-28 12:32:39,032] 1025 httpx - INFO -HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-07-28 12:32:39,039] 107 dagshub - INFO -Accessing as eshaannanda04
+[2025-07-28 12:32:39,405] 1025 httpx - INFO -HTTP Request: GET https://dagshub.com/api/v1/repos/eshaannanda04/networkSecurity "HTTP/1.1 200 OK"
+[2025-07-28 12:32:39,769] 1025 httpx - INFO -HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-07-28 12:32:39,773] 107 dagshub - INFO -Initialized MLflow to track repo "eshaannanda04/networkSecurity"
+[2025-07-28 12:32:39,775] 107 dagshub - INFO -Repository eshaannanda04/networkSecurity initialized!
+[2025-07-28 12:32:50,402] 42 root - INFO -start data ingestion
+[2025-07-28 12:32:59,324] 67 root - INFO -Performed train test split
+[2025-07-28 12:32:59,325] 68 root - INFO -Exited the train_test method
+[2025-07-28 12:32:59,325] 73 root - INFO -Exporting train anf test file path
+[2025-07-28 12:32:59,552] 77 root - INFO -Made dir for train & test set
+[2025-07-28 12:32:59,553] 45 root - INFO -Data INgestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\07_28_2025_12_32_36\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\07_28_2025_12_32_36\\data_ingestion\\ingested\\test.csv')
+[2025-07-28 12:32:59,568] 56 root - INFO -Initiate the data Validation
+[2025-07-28 12:32:59,740] 39 root - INFO -required number of culmns: 2
+[2025-07-28 12:32:59,741] 40 root - INFO -Data Frame has columns :31
+[2025-07-28 12:32:59,741] 39 root - INFO -required number of culmns: 2
+[2025-07-28 12:32:59,742] 40 root - INFO -Data Frame has columns :31
+[2025-07-28 12:33:00,383] 45 root - INFO -startung data transofmration
+[2025-07-28 12:33:00,471] 33 root - INFO -Enteretd get data trasnformation obj
+[2025-07-28 12:33:00,498] 47 root - INFO -Entered the save_object method of MainUtils class
+[2025-07-28 12:33:00,506] 51 root - INFO -Exited the save_object method of MainUtils class
+[2025-07-28 12:33:00,506] 47 root - INFO -Entered the save_object method of MainUtils class
+[2025-07-28 12:33:00,514] 51 root - INFO -Exited the save_object method of MainUtils class
+[2025-07-28 12:48:56,729] 47 root - INFO -Entered the save_object method of MainUtils class
+[2025-07-28 12:48:56,767] 51 root - INFO -Exited the save_object method of MainUtils class
+[2025-07-28 12:48:56,767] 47 root - INFO -Entered the save_object method of MainUtils class
+[2025-07-28 12:48:56,798] 51 root - INFO -Exited the save_object method of MainUtils class
+[2025-07-28 12:48:56,798] 125 root - INFO -Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\07_28_2025_12_32_36\\model_trainer\\trained_model\\saved_models', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9912506953927072, precision_score=0.9915014164305949, recall_score=0.9910001011224593), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9861770167113677, precision_score=0.9867877786952931, recall_score=0.9855670103092784))

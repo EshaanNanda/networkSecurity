@@ -22,7 +22,8 @@ from urllib.parse import urlparse
 
 from networkSec.utils.ml_utils.model.estimator import NetworkModel
 
-#import dagshub
+import dagshub
+dagshub.init(repo_owner='eshaannanda04', repo_name='networkSecurity', mlflow=True)
 
 class ModelTrainerComponent:
     def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
